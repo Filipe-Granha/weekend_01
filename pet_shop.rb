@@ -18,7 +18,9 @@ def total_cash(add_cash, x)
 end
 
 
-
+def total_cash(add_cash, x)
+  add_cash[:admin][:total_cash] -= x
+end
 
 
 

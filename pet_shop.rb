@@ -49,16 +49,16 @@ def find_pet_by_name(shop, pet_name)
     if pet[:name] == pet_name
       return pet
     end
-    
   end
   return nil
 end
 
 
 
-
-
-
+def add_pet_to_stock(shop, new_pet)
+shop[:pets].push(new_pet)
+return shop[:pets].count
+end
 
 
 

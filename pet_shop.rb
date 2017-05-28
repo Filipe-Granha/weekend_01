@@ -25,3 +25,10 @@ end
 def pets_sold (sold_pets)
   sold_pets[:admin][:pets_sold]
 end
+
+
+
+def pets_sold(sold_pets, x)
+  sold_pets[:admin][:pets_sold] += x
+end
+

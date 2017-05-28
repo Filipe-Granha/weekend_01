@@ -133,11 +133,12 @@ class TestPetShop < Minitest::Test
     assert_nil(pet)
   end
 
-  # def test_remove_pet_by_name
-  #   remove_pet_by_name(@pet_shop, "Arthur")
-  #   pet = find_pet_by_name(@pet_shop,"Arthur")
-  #   assert_nil(pet)
-  # end
+  def test_remove_pet_by_name
+    remove_pet_by_name(@pet_shop, "Arthur")
+    pet = find_pet_by_name(@pet_shop,"Arthur")
+    assert_nil(pet)
+  end
+  # delete the whole pet hash
 
   def test_add_pet_to_stock
     add_pet_to_stock(@pet_shop, @new_pet)

@@ -54,6 +54,18 @@ def find_pet_by_name(shop, pet_name)
 end
 
 
+def remove_pet_by_name(shop, pet_name)
+pets = shop[:pets]
+for pet in pets
+  if pet[:name] == pet_name
+    shop[:pets].delete(pet)
+  end
+end
+return pet
+end
+
+
+
 
 def add_pet_to_stock(shop, new_pet)
   shop[:pets].push(new_pet)
@@ -74,7 +86,7 @@ end
 
 
 
-
+# with the help of Mr Eugene Kim
 
 
 
